@@ -18,13 +18,13 @@ https://github.com/hubrick/hubrick-backend-challenge.git
 
 4. Only libraries that are part of Oracle Java Runtime are used.
 
-5. The Java class "GenerateReports.java" reads the following 3 input CSV files: (Input files have to be in the same directory as Main Java class "GenericReports.java)
+5. The Java class **"GenerateReports.java"** reads the following 3 input CSV files: (Input files have to be in the same directory as Main Java class "GenericReports.java)
 
       1. employees.csv
       2. departments.csv
       3. ages.csv
       
-      Generates the following 4 reports as output in the Root directory of the Eclipse Project (under GenerateReports folder)
+      Generates the following **4 reports as output in the Root directory of the Eclipse Project** (under GenerateReports folder)
       (with Header columns)
       
       1. AvgIncomeByAgeRange.csv
@@ -75,7 +75,7 @@ https://github.com/hubrick/hubrick-backend-challenge.git
 
 1. #### **Median Formula:**
 
-    First the data set list is sorted in ascending order from lowest to highest and then,
+    **First** the data set list is **sorted in ascending order** from lowest to highest and then,
       
       **If n is odd then Median (M) = value of ((n + 1)/2)th item term.**
       
@@ -85,11 +85,11 @@ https://github.com/hubrick/hubrick-backend-challenge.git
     
     You can use this following calculator to verify the Median Value for the data set.
     
-     [Median Calculator] (http://www.alcula.com/calculators/statistics/median/)
+     [Median Calculator] (http://www.alcula.com/calculators/statistics/median/).
     
 2. #### **95th Percentile Formula:**
 
-     First the data set list is sorted in ascending order from lowest to highest and then,
+     **First** the data set list is **sorted in ascending order** from lowest to highest and then,
 
     **Index = p / 100 * n**
     
@@ -102,11 +102,11 @@ https://github.com/hubrick/hubrick-backend-challenge.git
      
     You can use this following calculator to verify the percentile Value for the data set.
     
-    [Percentile Calculator] (http://www.emathhelp.net/calculators/probability-statistics/percentile-calculator/?i=1%2C4%2C-3%2C2%2C-9%2C-7%2C0%2C-4%2C-1%2C2%2C1%2C-5%2C-3%2C10%2C10%2C5&p=95&steps=on)
+    [Percentile Calculator] (http://www.emathhelp.net/calculators/probability-statistics/percentile-calculator/?i=1%2C4%2C-3%2C2%2C-9%2C-7%2C0%2C-4%2C-1%2C2%2C1%2C-5%2C-3%2C10%2C10%2C5&p=95&steps=on).
 
 3. #### **Average Formula:**
 
-     First the data set list is sorted in ascending order from lowest to highest and then,
+     **First** the data set list is **sorted in ascending order** from lowest to highest and then,
      
      
       **Average = (sum of all the values in the data set)/ n**
