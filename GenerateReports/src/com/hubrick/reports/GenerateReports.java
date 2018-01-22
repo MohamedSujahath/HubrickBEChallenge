@@ -535,7 +535,7 @@ public class GenerateReports {
 		avgIncomeByAgeRangeHeadersList.add("Average Income in this Age Range");
 
 			try {
-				generateAvgIncomeCSVOuputReport("IncomeAvgByAgeRange.csv", avgIncomeByAgeRangeHeadersList, avgIncomeByAgeRangeList);
+				generateAvgIncomeCSVOuputReport("AvgIncomeByAgeRange.csv", avgIncomeByAgeRangeHeadersList, avgIncomeByAgeRangeList);
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
