@@ -14,23 +14,23 @@ https://github.com/hubrick/hubrick-backend-challenge.git
     
 2. **"GenerateReports.java"** under the folder (GenerateReports/src/com/hubrick/reports/GenerateReports.java) is the main Java Class which when executed by right click and Run As Java Application reads all the 3 input data CSV files and generates the 4 reports after the calculation.
 
-3. The code is compilable with Oracle JDK 1.8 and path to the directory containing the input data files is not necessary as all the input data CSV files are kept in the same directory as the Main Java class "GenericReports.java" that is enough.
+3. The code is compilable with **Oracle JDK 1.8** and path to the directory containing the input data files is not necessary as all the input data CSV files are kept in the same directory as the Main Java class "GenericReports.java" that is enough.
 
 4. Only libraries that are part of Oracle Java Runtime are used.
 
 5. The Java class "GenerateReports.java" reads the following 3 input CSV files: (Input files have to be in the same directory as Main Java class "GenericReports.java)
 
-      a) employees.csv
-      b) departments.csv
-      c) ages.csv
+      1. employees.csv
+      2. departments.csv
+      3. ages.csv
       
       Generates the following 4 reports as output in the Root directory of the Eclipse Project (under GenerateReports folder)
       (with Header columns)
       
-      a) AvgIncomeByAgeRange.csv
-      b) MedianAgeByDepartment.csv
-      c) MedianIncomeByDepartment.csv
-      d) Percentile95IncomeByDepartment.csv
+      1. AvgIncomeByAgeRange.csv
+      2. MedianAgeByDepartment.csv
+      3. MedianIncomeByDepartment.csv
+      4. Percentile95IncomeByDepartment.csv
       
  6. The Department CSV files is **alphabetically sorted** after reading from the input csv file departments.csv and then only used for calculation.
 
@@ -68,7 +68,7 @@ https://github.com/hubrick/hubrick-backend-challenge.git
 ### **Technologies used:**
 
 1. Java 8 (1.8)
-2. Java 8 - Streams API, Lambda expressions, filters, map, Sorting using comparators, Collectors, Functions, FileInputStream Readers, Buffered Reader, File Writer.
+2. Java 8 - **Streams API, Lambda expressions, filters, map, Sorting using comparators, Collectors, Functions, FileInputStream Readers, Buffered Reader, File Writer.**
 
 
 ###  **Calculation Mathematical Formula used:**
@@ -77,20 +77,21 @@ https://github.com/hubrick/hubrick-backend-challenge.git
 
     First the data set list is sorted in ascending order from lowest to highest and then,
       
-      If n is odd then Median (M) = value of ((n + 1)/2)th item term.
-      If n is even then Median (M) = value of [((n)/2)th item term + ((n)/2 + 1)th item term ]/2
+      **If n is odd then Median (M) = value of ((n + 1)/2)th item term.**
+      
+      **If n is even then Median (M) = value of [((n)/2)th item term + ((n)/2 + 1)th item term ]/2**
     
     where n is the number of observations in the data list.
     
     You can use this following calculator to verify the Median Value for the data set.
     
-    http://www.alcula.com/calculators/statistics/median/
+     [Median Calculator] (http://www.alcula.com/calculators/statistics/median/)
     
 2. #### **95th Percentile Formula:**
 
      First the data set list is sorted in ascending order from lowest to highest and then,
 
-    Index = p / 100 * n
+    **Index = p / 100 * n**
     
     where p is the p-th percentile which is 95 in this case and
     n is number of items in the data set list.
@@ -101,14 +102,14 @@ https://github.com/hubrick/hubrick-backend-challenge.git
      
     You can use this following calculator to verify the percentile Value for the data set.
     
-    http://www.emathhelp.net/calculators/probability-statistics/percentile-calculator/?i=1%2C4%2C-3%2C2%2C-9%2C-7%2C0%2C-4%2C-1%2C2%2C1%2C-5%2C-3%2C10%2C10%2C5&p=95&steps=on
+    [Percentile Calculator] (http://www.emathhelp.net/calculators/probability-statistics/percentile-calculator/?i=1%2C4%2C-3%2C2%2C-9%2C-7%2C0%2C-4%2C-1%2C2%2C1%2C-5%2C-3%2C10%2C10%2C5&p=95&steps=on)
 
 3. #### **Average Formula:**
 
      First the data set list is sorted in ascending order from lowest to highest and then,
      
      
-      Average = (sum of all the values in the data set)/ n
+      **Average = (sum of all the values in the data set)/ n**
       
       where n - total number of items in the data set
       
