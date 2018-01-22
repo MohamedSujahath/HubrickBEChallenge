@@ -1,18 +1,18 @@
 # HubrickBEChallenge
 
-Question:
+# Question:
 
 https://github.com/hubrick/hubrick-backend-challenge.git
 
-Solution:
+# Solution:
 
-Things followed from the Assignment Question:
+**Things followed from the Assignment Question:**
 
-1. "GenerateReports" is a Eclipse Java Project which can be checked out from the Github repository and imported into Eclipse and run as a Java Project.
+1. **"GenerateReports"** is a Eclipse Java Project which can be checked out from the Github repository and imported into Eclipse and run as a Java Project.
 
     Repository Clone URL : https://github.com/MohamedSujahath/HubrickBEChallenge.git
     
-2. "GenerateReports.java" under the folder (GenerateReports/src/com/hubrick/reports/GenerateReports.java) is the main Java Class which when executed by right click and Run As Java Application reads all the 3 input data CSV files and generates the 4 reports after the calculation.
+2. **"GenerateReports.java"** under the folder (GenerateReports/src/com/hubrick/reports/GenerateReports.java) is the main Java Class which when executed by right click and Run As Java Application reads all the 3 input data CSV files and generates the 4 reports after the calculation.
 
 3. The code is compilable with Oracle JDK 1.8 and path to the directory containing the input data files is not necessary as all the input data CSV files are kept in the same directory as the Main Java class "GenericReports.java" that is enough.
 
@@ -32,10 +32,10 @@ Things followed from the Assignment Question:
       c) MedianIncomeByDepartment.csv
       d) Percentile95IncomeByDepartment.csv
       
- 6. The Department CSV files is alphabetically sorted after reading from the input csv file departments.csv and then only used for calculation.
+ 6. The Department CSV files is **alphabetically sorted** after reading from the input csv file departments.csv and then only used for calculation.
 
 
-Instructions for Execution:
+**Instructions for Execution:**
 
 1. Clone the Github Repository using the following URL:
 
@@ -58,22 +58,22 @@ Instructions for Execution:
 9. All the CSV files contains a header for all the columns and the requested report data.
 
 
-Other Files in the Project:
+**Other Files in the Project:**
 
 1. Data Model classes for both the input CSV files and the Output CSV files.
 
 2. CSVFileWriter.java - This Utility Java class helps in the writing the output CSV reports files
  
  
-Technologies used:
+**Technologies used:**
 
 1. Java 8 (1.8)
 2. Java 8 - Streams API, Lambda expressions, filters, map, Sorting using comparators, Collectors, Functions, FileInputStream Readers, Buffered Reader, File Writer.
 
 
-Calculation Mathematical Formula used:
+**Calculation Mathematical Formula used:**
 
-1. Median Formula:
+1. **Median Formula:**
 
     First the data set list is sorted in ascending order from lowest to highest and then,
       
@@ -86,7 +86,7 @@ Calculation Mathematical Formula used:
     
     http://www.alcula.com/calculators/statistics/median/
     
-2. 95th Percentile Formula:
+2. **95th Percentile Formula:**
 
      First the data set list is sorted in ascending order from lowest to highest and then,
 
@@ -103,7 +103,7 @@ Calculation Mathematical Formula used:
     
     http://www.emathhelp.net/calculators/probability-statistics/percentile-calculator/?i=1%2C4%2C-3%2C2%2C-9%2C-7%2C0%2C-4%2C-1%2C2%2C1%2C-5%2C-3%2C10%2C10%2C5&p=95&steps=on
 
-3. Average Formula:
+3. **Average Formula:**
 
      First the data set list is sorted in ascending order from lowest to highest and then,
      
